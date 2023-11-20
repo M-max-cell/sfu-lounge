@@ -48,7 +48,7 @@ SFU Lounge is an innovative Android application designed specifically for Simon 
 
 
 ## Show and Tell 1 (Sprint 1)
-For the grading and inspect of 362's professor and TAs
+For the grading and inspect of 362's professor and TAs ([Click to download app APK](https://github.com/M-max-cell/sfu-lounge/releases/download/sfu-lounge-v1.0.0/sfu-lounge.apk))
 
 ## Mock Ups
 UI mock-up for settings page  
