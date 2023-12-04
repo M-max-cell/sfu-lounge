@@ -121,6 +121,10 @@ This section includes more details on app features, future plans and past show a
 - **MatchesViewModel**: Manages the swiping mechanism and user recommendations.
 - **ChatViewModel**: Queries chat rooms and messages, handles chat functionalities.
 
+### Unit tests
+- implemented unit tests with JUnit
+- unit tests cover login, sign up and more basic functionality
+
 ## Implementation Details
 
 ### User Profile
