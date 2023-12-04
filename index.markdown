@@ -48,7 +48,7 @@ SFU Lounge is an innovative Android application designed specifically for Simon 
 
 
 ## Show and Tell 1 (Sprint 1)
-For the grading and inspect of 362's professor and TAs ([Click to download app APK](https://github.com/M-max-cell/sfu-lounge/releases/download/sfu-lounge-v1.0.0/sfu-lounge.apk))
+For the grading and inspect of 362's professor and TAs ([~~Click to download app APK~~](https://github.com/M-max-cell/sfu-lounge/releases/download/sfu-lounge-v1.0.0/sfu-lounge.apk))
 
 ## Mock Ups
 UI mock-up for settings page  
@@ -119,7 +119,7 @@ Click on the thumbnail below to watch the Show and Tell video:
 
 
 ## Show and Tell 2 (Sprint 2)
-For the grading and inspect of 362's professor and TAs ([Click to download app APK](https://github.com/M-max-cell/sfu-lounge/releases/download/sfu-lounge-v2.0.0/sfu-lounge2.apk))
+For the grading and inspect of 362's professor and TAs ([~~Click to download app APK~~](https://github.com/M-max-cell/sfu-lounge/releases/download/sfu-lounge-v2.0.0/sfu-lounge2.apk))
 
 ## Mock Ups
 
@@ -201,6 +201,13 @@ Click on the thumbnail below to watch the Show and Tell video:
 - Psychology research to determine user's personality in order to have better match making algorithm 
 - Initiated the work for notification implementations
 - **Future Plans**: Post-semester deployment, advertisement through SFU clubs, and continuous app development for enhancing user experience.
+
+## Presentation
+For the grading and inspect of 362's professor and TAs ([Click to download app APK](https://github.com/M-max-cell/sfu-lounge/releases/download/sfu-lounge-v3.0.0/sfu-lounge.apk))
+
+[Presentation video](https://youtu.be/s9mEcrVzXas)
+  
+[Presentation Slides](https://docs.google.com/presentation/d/1jn93Px_FvLQPenU4TvXCC9juKwyNrdpZk9ZVbpEzj2o/edit?pli=1#slide=id.p)
 
 ## Getting Started
 
