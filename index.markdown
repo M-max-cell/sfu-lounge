@@ -6,13 +6,102 @@ layout: default
 ---
 
 # SFULounge
-With SFU Lounge, you can discover like-minded students who share your interests and academic goals, fostering meaningful connections within the SFU community. Stay informed about the most exciting events on campus, ensuring you never miss out on opportunities. Initiate conversations and meet new friends directly through the in-app chat feature.   
+SFU Lounge is a unique Android app tailored for Simon Fraser University students, aiming to overcome the socialization challenges in a commuter-heavy environment. The app encourages meaningful connections among students by offering features such as interest-based matching and icebreaker chats. Users can discover like-minded peers, stay updated on campus events, and initiate conversations through the in-app chat feature, fostering a sense of community within SFU.  
 
-## Introduction
-SFU Lounge is an innovative Android application designed specifically for Simon Fraser University (SFU) students. The app facilitates making new friends and connections within the SFU community, particularly addressing the challenge of socializing in a predominantly commuting school. SFU Lounge stands out with its unique features like blind profiles, interest-based matching, and icebreaker chats.
+## Why SFU Lounge?
+1. **Connections**. Encourages connections beyond academic boundaries, helping users meet others outside their major.
+
+2. **Only for SFU**. This is a friends making app only meant for SFU students, making it easier for the audience to meet each other in real life
+
+3. **Making SFU more alive**. Connects SFU commuter students, overcoming socialization challenges and building a sense of community on campus
+
+## Challenges  
+- designing nosql schema that is efficient
+- using firestore SDKs to interact with the database
+- building database index to improve querying time for specific queries
+- using firestore snapshot listeners with livedata in the viewmodel to respond to changes in the database and update UI
+- using email verification for new accounts. Our app will send a verification email to new users and they must click the link in the email to be able to continue/login to our app
+- using firebase storage with firestore to upload images
+- using library such as Glide to display images that are remote (urls) 
+- used complex thread programming to enhance ui experience in explore page
+- use prefetching to load users profile pictures without needing to make queries in the adapter
+- adapted Swipe Cards API so that users can effortlessly navigate through users profiles by swiping left or right animations
+- Implemented notification by using a foreground service to check for any new messages 
+- came up with an recommendation algorithm to load of users
+- Designed custom UI/UX design: custom buttons, backgrounds, gridview and much more
+- Added custom backgrounds for different pages
+- Psychology research to determine user’s personality in order to have better matchmaking algorithm
+- Ensured that textviews stayed restricted to 1 line and included ellipsis (…) if they exceeded the 1 line.
+- As firebase does not have support for cross service error handling we needed to implement our own data recovery strategies when we detect inconsistencies with the database
+- created new styling pages to enforce photo dimensions and frames so that we can have round profile photos
+
+## Design Diagrams
+- [MVVM Model Document](https://docs.google.com/document/d/142Y2wBGEi41fotJXZjBQioxGrZqqjPv744CmfmjM3T8/edit?usp=sharing)
+- [Threading Diagram](https://github.com/kianhk6/SFULounge/files/13471130/thread_diagram_3.4.pdf)
+
+## Who did what
+### Kian Hosseinkhani
+- Management: Led the team, assigned tasks and bug fixes via GitHub issues, and designed the MVVM diagram prototype.
+- Worked on matchmaking features.
+- Created database tables, repository functions, and viewmodels.
+- Developed user recommendation algorithms.
+- Participated in the development of chatting/messaging feature.
+- Provided documentation.
+- Worked on threading for loading up user profiles in the explore page for my robust UI.
+- Worked on sorting/filtering users based on compatibility.
+- Worked on implementing ice breakers
+- Fixed styling bugs in the development of chatting/messaging feature.
+
+### Mathew Wong
+- Created database tables, repository functions, and viewmodels
+- Implemented email authentication for sign-up.
+- Implemented login features.
+- Implemented sign up back end 
+- Implemented chatting/messaging feature.
+- Participated in Bug fixing tasks related to the front end wiring.
+- Created Settings page [changing images, depth questions, interests and basic information]
+- Implemented the website.
+- Provided thread diagram.
+- Improved chatrooms by using firestore snapshot listeners with livedata in the viewmodel to respond to changes in the database and update UI
+- Implemented Notification services
+- Implemented error handling for firebase
+- Used libraries such as Glide to display images that are remote (urls)
+
+### Teeya Li
+- Designed Interest and Deep Questions for the sign-up page.
+- Created the Welcome page.
+- Contributed to UI prototyping.
+- Provided documentation.
+- Participated in Bug Fixing Tasks Related to the Front End Wiring.
+- Styled Status Bar and App Icon
+- Created and Styled the ‘No More Recommendations Left’ Page
+- Styled the Personality Quiz Page
+- Designed and Styled Messages and Chat Rooms
+
+### Nathalie Kaspar
+- Designed images and basic information sign-up page and email authentication page.
+- Designed explore page xml by putting custom backgrounds and other components.
+- Adapted SwipeCards API so that users can effortlessly navigate through users profiles by swiping left or right
+- Developed wiring between the xml components and the User information.
+- Showcased a simple and user friendly user profile view by adding an "expand" button to show or hide the user's info
+- Styled both Day and Night themes to ensure an aesthetically pleasing UI for all users.
+- Enhanced responsiveness by using Glide to display images that are remote (urls)
+
+### Divij Gupta
+- Participated in brainstorming meeting for backend database architecture.
+- Psychology research to find 15 questions to ask from the users so he can assign them a personality tag
+- Implemented the quiz calculating user’s response and assigned the user’s with their tag through a pop up [These tags will be used to enhance user recommendations]
+
+## Presentation
+For the grading and inspect of 362's professor and TAs ([Click to download app APK](https://github.com/M-max-cell/sfu-lounge/releases/download/sfu-lounge-v3.0.0/sfu-lounge.apk))
+
+- [Presentation video (includes demo)](https://youtu.be/s9mEcrVzXas)
+- [Presentation slides](https://docs.google.com/presentation/d/1jn93Px_FvLQPenU4TvXCC9juKwyNrdpZk9ZVbpEzj2o/edit?pli=1#slide=id.p)
+
+# More Details
+This section includes more details on app features, future plans and past show and tells.  
 
 ## Features
-
 ### User Profile
 - **User Database Fields**: ID, First Name, Last Name (hidden), Gender, SFU Email, Password, Interests, Depth Questions (3), Photos (up to 5), Online Status.
 - **Swipe Mechanism**: Users can swipe left or right on other user profiles. Swipe actions are stored with user IDs.
@@ -201,13 +290,6 @@ Click on the thumbnail below to watch the Show and Tell video:
 - Psychology research to determine user's personality in order to have better match making algorithm 
 - Initiated the work for notification implementations
 - **Future Plans**: Post-semester deployment, advertisement through SFU clubs, and continuous app development for enhancing user experience.
-
-## Presentation
-For the grading and inspect of 362's professor and TAs ([Click to download app APK](https://github.com/M-max-cell/sfu-lounge/releases/download/sfu-lounge-v3.0.0/sfu-lounge.apk))
-
-[Presentation video](https://youtu.be/s9mEcrVzXas)
-  
-[Presentation Slides](https://docs.google.com/presentation/d/1jn93Px_FvLQPenU4TvXCC9juKwyNrdpZk9ZVbpEzj2o/edit?pli=1#slide=id.p)
 
 ## Getting Started
 
